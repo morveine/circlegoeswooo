@@ -55,13 +55,12 @@ h1>span {
     top: 40%;
     display: block;
     position: fixed;
-    /* z-index: -1; */
 }
 
 .circle-form {
     height: var(--circle-dimension);
     width: var(--circle-dimension);
-    background-color: rgb(223, 14, 14);
+    background-color: rgb(223, 174, 14);
     border-radius: 50%;
     display: block;
 }
@@ -70,7 +69,7 @@ h1>span {
 
 .controls {
     font-family: var(--font-1);
-    min-height: 100vh;
+    min-height: 75vh;
     display: flex;
     flex-direction: column;
     padding: 15vh 5vw;
@@ -80,6 +79,8 @@ h1>span {
 .controls h2 {
     margin-bottom: 2rem;
     width: fit-content;
+    color: white;
+    mix-blend-mode: difference;
 }
 
 /* inputs: slider + color */
@@ -87,7 +88,7 @@ h1>span {
 .input-wrapper {
     display: flex;
     flex-direction: column;
-    width: fit-content;
+    width: 350px;
     gap: 2rem;
 }
 
@@ -122,16 +123,12 @@ h1>span {
     -webkit-appearance: none;
     height: 20px;
     width: 20px;
-    border: 3px solid white;
+    border: 2px solid white;
     outline: none;
     border-radius: 10px;
     background: black;
     cursor: pointer;
     margin-top: -10px;
-}
-
-#slider-size::-webkit-slider-thumb:focus {
-    outline: 2px solid red;
 }
 
 #slider-size::-moz-range-thumb {
@@ -148,10 +145,10 @@ h1>span {
 
 #slider-size::-webkit-slider-runnable-track {
     width: 100%;
-    height: 2px;
+    height: 1px;
     cursor: pointer;
     border-radius: 1.3px;
-    border: 0.2px solid black;
+    border: 0.1px solid rgba(92, 92, 92, 0.686);
 }
 
 #slider-size::-moz-range-track {
@@ -163,7 +160,7 @@ h1>span {
     background-color: black;
 }
 
-/* color picker */
+/* color */
 
 .color-picker-wrapper {
     position: relative;
@@ -199,4 +196,34 @@ h1>span {
 #color-picker::-webkit-color-swatch {
     border: none;
     border-radius: 10%;
+}
+
+/* text section */
+
+.sometext {
+    min-height: 50vh;
+    display: flex;
+    flex-direction: column;
+    padding: 0 5vw 20vh;
+    gap: 2rem;
+    background-color: white;
+    width: 50%;
+    align-self: flex-end;
+}
+
+.sometext>h3,
+.sometext>p {
+    mix-blend-mode: difference;
+    color: white;
+    text-align: right;
+}
+
+h3 {
+    font-family: var(--font-2);
+    font-size: 2rem;
+}
+
+p {
+    font-family: var(--font-1);
+    font-size: 1.5rem;
 }
