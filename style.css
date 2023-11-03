@@ -1,0 +1,81 @@
+/* reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* style */
+
+:root {
+    --circle-dimension: 250px;
+    --font-1: "Poppins", sans-serif;
+    --font-2: 'Bodoni Moda', serif;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+body {
+    background-color: white;
+}
+
+.h1-container {
+    min-height: 100vh;
+    min-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-family: var(--font-2);
+    font-weight: 400;
+    z-index: 1;
+    color: #ffffff;
+    mix-blend-mode: difference;
+}
+
+h1>span {
+    font-style: italic;
+    font-weight: 700;
+}
+
+.circle {
+    position: absolute;
+    left: 45%;
+    top: 40%;
+    display: block;
+    position: fixed;
+    /* z-index: -1; */
+}
+
+.circle-form {
+    height: var(--circle-dimension);
+    width: var(--circle-dimension);
+    background-color: rgb(223, 14, 14);
+    border-radius: 50%;
+    display: block;
+}
+
+.controls {
+    font-family: var(--font-1);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding: 15vh 5vw;
+    gap: 2rem;
+}
+
+.controls h2 {
+
+}
+
+.input-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    gap: 2rem;
+}
