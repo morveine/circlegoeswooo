@@ -51,8 +51,8 @@ h1>span {
 
 .circle {
     position: absolute;
-    left: 45%;
-    top: 40%;
+    left: 50%;
+    top: 50%;
     display: block;
     position: fixed;
 }
@@ -60,9 +60,10 @@ h1>span {
 .circle-form {
     height: var(--circle-dimension);
     width: var(--circle-dimension);
-    background-color: rgb(223, 174, 14);
+    background-color: rgb(224, 61, 61);
     border-radius: 50%;
     display: block;
+    transform: translate(-50%,-50%);
 }
 
 /* second section */
@@ -99,6 +100,7 @@ h1>span {
     -webkit-appearance: none;
     width: 100%;
     background: transparent;
+    z-index: 10;
 }
 
 /* slider - thumb */
