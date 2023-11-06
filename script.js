@@ -9,7 +9,7 @@ let isDown = false;
 
 sizeInput.addEventListener('input', changeSize);
 colorInput.addEventListener('input', changeColor);
-// circle.addEventListener('click', dragElement);
+
 circleDiv.addEventListener('mousedown', function (e) {
     isDown = true;
     offset = [
